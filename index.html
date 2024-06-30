@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Meza - Prortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="#inicio">Leo.dev</a>
+            </div>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portafolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="inicio">
+            <h1>Leonardo Meza</h1>
+            <h2>Desarrollador web Junior </h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <p>Soy un desarrollador web y diseñador UX/UI junior con una gran pasión por crear experiencias digitales atractivas y fáciles de usar. Mi camino en este mundo es el resultado de un aprendizaje autodidacta constante, donde la curiosidad y la adaptabilidad son mis principales motores.
+                No le temo a los desafíos, al contrario, los veo como oportunidades para aprender y crecer. Mi objetivo es formar parte de un equipo dinámico donde pueda seguir desarrollando mis habilidades y contribuir al éxito de proyectos innovadores.</p>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <div class="container">
+                <h2>Portafolio</h2>
+                <div class="proyectos">
+                    <div class="proyecto">
+                        <img src="img/proyecto1.jpg" alt="Proyecto 1" data-description="Descripción del Proyecto 1">
+                        <h4>Proyecto 1</h4>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/proyecto2.jpg" alt="Proyecto 2" data-description="Descripción del Proyecto 2 con más detalles y palabras clave relevantes.">
+                        <h4>Proyecto 2</h4>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/proyecto3.jpg" alt="Proyecto 3" data-description="Descripción del Proyecto 3, que puede ser más larga y atractiva.">
+                        <h4>Proyecto 3</h4>
+                    </div>
+                </div>
+                <div id="modal">
+                    <div class="modal-content">
+                        <span class="close">×</span>
+                        <img src="" alt="Proyecto" id="modal-img">
+                        <h3 id="modal-title"></h3>
+                        <p id="modal-description"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>UX/UI Design</li>
+                    <li>React</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Email: Leonardo.meza.v18@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© Leonardo Meza - 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
