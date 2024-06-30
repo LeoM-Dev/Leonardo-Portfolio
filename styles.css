@@ -204,7 +204,7 @@ footer {
   /* Media Queries (Responsive Design) */
 @media (max-width: 768px) {
     #inicio {
-    margin-top: 0px;
+    margin-top: 50px;
     }
     #navbar {
     margin: 0px;
