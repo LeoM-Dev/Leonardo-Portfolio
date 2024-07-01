@@ -7,45 +7,15 @@ body {
     overflow-x: auto;
 }
 
-#navbar {
-    background-color: #252525;
-    position: fixed;
-    padding: 20px 0;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-#navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#navbar li {
-    margin-left: 20px;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-
-.logo {
-    float: left;
-    padding-left: 30px;
+.section{
+    padding: 50px 0;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 h1, h2, h3 {
@@ -71,12 +41,75 @@ a {
 }
 
 header {
-    background-color: #252525;
-    border-bottom-left-radius:25px ;
-    border-bottom-right-radius:25px ;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
+    font-family: "montserrat";
+    background: #252525;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+header .logo {
+    font-size: 30px;
+    color: #f4f4f4;
+}
+header nav ul {
+    display: flex;
+    padding-right: 50px;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #f4f4f4;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: dodgerblue;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #f4f4f4;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        padding-right:60px ;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 70px;
+        background: #252525;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
 }
 
   /* Secciones */
@@ -206,9 +239,7 @@ footer {
     #inicio {
     margin-top: 50px;
     }
-    #navbar {
-    margin: 0px;
-    }
+
     h1 {
     font-size: 2.5rem;
     }
