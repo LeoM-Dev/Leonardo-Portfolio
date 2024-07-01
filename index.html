@@ -10,24 +10,40 @@
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <a href="#inicio">Leo.dev</a>
-            </div>
+        <div class="logo">Leo.dev</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
             <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#portafolio">Portfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Portafolio</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">habilidades</a>
+                </li>
+                <li>
+                    <a href="">sobre mí</a>
+                </li>
             </ul>
         </nav>
-        <div class="container" id="inicio">
-            <h1>Leonardo Meza</h1>
-            <h2>Desarrollador web Junior </h2>
-        </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
 
     <main>
+        <div class="container" id="inicio">
+            <div class="perfil"></div>
+            <h1>Leonardo Meza</h1>
+            <h2>Desarrollador web Junior </h2>
+        </div>
         <section id="sobre-mi">
             <div class="container">
                 <h2>Sobre Mí</h2>
